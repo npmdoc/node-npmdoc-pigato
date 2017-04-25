@@ -1,0 +1,537 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://github.com/prdn/pigato"
+
+    >pigato (v0.0.46)</a>
+</h1>
+<h4>An high-performance Node.js microservices framework based on ZeroMQ</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.pigato">module pigato</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.pigato.BrokerController">
+            function <span class="apidocSignatureSpan">pigato.</span>BrokerController
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">pigato.</span>BrokerController.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">pigato.</span>utils</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.pigato.BrokerController">module pigato.BrokerController</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.pigato.BrokerController.BrokerController">
+            function <span class="apidocSignatureSpan">pigato.</span>BrokerController
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.pigato.BrokerController.prototype">module pigato.BrokerController.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.pigato.BrokerController.prototype._srq">
+            function <span class="apidocSignatureSpan">pigato.BrokerController.prototype.</span>_srq
+            <span class="apidocSignatureSpan">(srv)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.pigato.BrokerController.prototype.init">
+            function <span class="apidocSignatureSpan">pigato.BrokerController.prototype.</span>init
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.pigato.BrokerController.prototype.rdel">
+            function <span class="apidocSignatureSpan">pigato.BrokerController.prototype.</span>rdel
+            <span class="apidocSignatureSpan">(req)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.pigato.BrokerController.prototype.rget">
+            function <span class="apidocSignatureSpan">pigato.BrokerController.prototype.</span>rget
+            <span class="apidocSignatureSpan">(rid, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.pigato.BrokerController.prototype.rgetall">
+            function <span class="apidocSignatureSpan">pigato.BrokerController.prototype.</span>rgetall
+            <span class="apidocSignatureSpan">(callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.pigato.BrokerController.prototype.rset">
+            function <span class="apidocSignatureSpan">pigato.BrokerController.prototype.</span>rset
+            <span class="apidocSignatureSpan">(req, callback)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.pigato.utils">module pigato.utils</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.pigato.utils.args">
+            function <span class="apidocSignatureSpan">pigato.utils.</span>args
+            <span class="apidocSignatureSpan">(_args)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.pigato.utils.mparse">
+            function <span class="apidocSignatureSpan">pigato.utils.</span>mparse
+            <span class="apidocSignatureSpan">(_msg)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.pigato.utils.shuffle">
+            function <span class="apidocSignatureSpan">pigato.utils.</span>shuffle
+            <span class="apidocSignatureSpan">(array)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.pigato" id="apidoc.module.pigato">module pigato</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.pigato.BrokerController" id="apidoc.element.pigato.BrokerController">
+        function <span class="apidocSignatureSpan">pigato.</span>BrokerController
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function BrokerController() {
+  this.__reqs = {};
+  this.__srq = {};
+
+  this.init();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.pigato.BrokerController" id="apidoc.module.pigato.BrokerController">module pigato.BrokerController</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.pigato.BrokerController.BrokerController" id="apidoc.element.pigato.BrokerController.BrokerController">
+        function <span class="apidocSignatureSpan">pigato.</span>BrokerController
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function BrokerController() {
+  this.__reqs = {};
+  this.__srq = {};
+
+  this.init();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.pigato.BrokerController.prototype" id="apidoc.module.pigato.BrokerController.prototype">module pigato.BrokerController.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.pigato.BrokerController.prototype._srq" id="apidoc.element.pigato.BrokerController.prototype._srq">
+        function <span class="apidocSignatureSpan">pigato.BrokerController.prototype.</span>_srq
+        <span class="apidocSignatureSpan">(srv)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_srq = function (srv) {
+  if (this.__srq[srv]) {
+    return this.__srq[srv];
+  }
+
+  var srq = this.__srq[srv] = [];
+  return srq;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.pigato.BrokerController.prototype.init" id="apidoc.element.pigato.BrokerController.prototype.init">
+        function <span class="apidocSignatureSpan">pigato.BrokerController.prototype.</span>init
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">init = function () {}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+&#x27;use strict&#x27;;
+
+function BrokerController() {
+this.__reqs = {};
+this.__srq = {};
+
+this.<span class="apidocCodeKeywordSpan">init</span>();
+}
+
+BrokerController.prototype.init = function() {};
+
+BrokerController.prototype._srq = function(srv) {
+if (this.__srq[srv]) {
+  return this.__srq[srv];
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.pigato.BrokerController.prototype.rdel" id="apidoc.element.pigato.BrokerController.prototype.rdel">
+        function <span class="apidocSignatureSpan">pigato.BrokerController.prototype.</span>rdel
+        <span class="apidocSignatureSpan">(req)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">rdel = function (req) {
+  delete this.__reqs[req.rid];
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+Broker.prototype.requestDelete = function(req) {
+if (!req) {
+  return;
+}
+
+this.rmap.delete(req.rid);
+if (req.opts.persist) {
+  this.ctrl.<span class="apidocCodeKeywordSpan">rdel</span>(req);
+}
+};
+
+Broker.prototype.requestValidate = function(req) {
+if (!req) {
+  return false;
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.pigato.BrokerController.prototype.rget" id="apidoc.element.pigato.BrokerController.prototype.rget">
+        function <span class="apidocSignatureSpan">pigato.BrokerController.prototype.</span>rget
+        <span class="apidocSignatureSpan">(rid, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">rget = function (rid, callback) {
+  var self = this;
+
+  setImmediate(function() {
+    callback(null, self.__reqs[rid]);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.pigato.BrokerController.prototype.rgetall" id="apidoc.element.pigato.BrokerController.prototype.rgetall">
+        function <span class="apidocSignatureSpan">pigato.BrokerController.prototype.</span>rgetall
+        <span class="apidocSignatureSpan">(callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">rgetall = function (callback) {
+  var self = this;
+
+  setImmediate(function() {
+    callback(null, self.__reqs);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+queue.push(function(next) {
+  self.pub.bind(self.conf.intch, function() {
+    next();
+  });
+});
+
+queue.push(function(next) {
+  self.ctrl.<span class="apidocCodeKeywordSpan">rgetall</span>(function(err, reqs) {
+    _.each(reqs, function(req) {
+      self.requestProcess(req);
+    });
+    next();
+  });
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.pigato.BrokerController.prototype.rset" id="apidoc.element.pigato.BrokerController.prototype.rset">
+        function <span class="apidocSignatureSpan">pigato.BrokerController.prototype.</span>rset
+        <span class="apidocSignatureSpan">(req, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">rset = function (req, callback) {
+  this.__reqs[req.rid] = req;
+
+  if (callback) {
+    callback();
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+};
+
+Broker.prototype.requestProcess = function(req) {
+  var service = this.serviceRequire(req.service);
+
+  this.rmap.set(req.rid, req);
+  if (req.opts.persist) {
+    this.ctrl.<span class="apidocCodeKeywordSpan">rset</span>(req);
+  }
+
+  service.q.push(req.rid);
+  this.dispatch(req.service);
+};
+
+Broker.prototype.requestDelete = function(req) {
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.pigato.utils" id="apidoc.module.pigato.utils">module pigato.utils</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.pigato.utils.args" id="apidoc.element.pigato.utils.args">
+        function <span class="apidocSignatureSpan">pigato.utils.</span>args
+        <span class="apidocSignatureSpan">(_args)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">args = function (_args) {
+  var args = [];
+  for (var i = 0; i &#x3c; _args.length; i++) {
+    args.push(_args[i]);
+  }
+  return args;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+this.pub = zmq.socket(&#x27;pub&#x27;);
+this.pub.identity = this.conf.name + &#x27;/pub&#x27;;
+
+var self = this;
+
+this.socket.on(&#x27;message&#x27;, function() {
+  var args = putils.<span class="apidocCodeKeywordSpan">args</span>(arguments);
+  self.onMsg.call(self, args);
+});
+
+this.hbTimer = setInterval(function() {
+  self.workersCheck();
+}, this.conf.heartbeat);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.pigato.utils.mparse" id="apidoc.element.pigato.utils.mparse">
+        function <span class="apidocSignatureSpan">pigato.utils.</span>mparse
+        <span class="apidocSignatureSpan">(_msg)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">mparse = function (_msg) {
+  var msg = [];
+  for (var i = 0; i &#x3c; _msg.length; i++) {
+    if (_msg[i]) {
+      msg[i] = _msg[i].toString();
+    }
+  }
+  return msg;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  return;
+}
+
+this.socket.send(msg);
+};
+
+Broker.prototype.onMsg = function(_msg) {
+var msg = putils.<span class="apidocCodeKeywordSpan">mparse</span>(_msg);
+
+var header = msg[1];
+
+if (header == MDP.CLIENT) {
+  this.onClient(msg);
+} else if (header == MDP.WORKER) {
+  this.onWorker(msg);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.pigato.utils.shuffle" id="apidoc.element.pigato.utils.shuffle">
+        function <span class="apidocSignatureSpan">pigato.utils.</span>shuffle
+        <span class="apidocSignatureSpan">(array)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">shuffle = function (array) {
+  var currentIndex = array.length, temporaryValue, randomIndex ;
+
+  while (0 !== currentIndex) {
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    } else if (brn &#x3c; arn) {
+      return 1;
+    }
+
+    return wa.rcnt &#x3c;= wb.rcnt ? -1 : 1;
+  });
+} else if (this.conf.dmode === &#x27;rand&#x27; &#x26;&#x26; workerIds.length &#x3e; 1) {
+  workerIds = putils.<span class="apidocCodeKeywordSpan">shuffle</span>(workerIds);
+}
+
+for (var r = 0; r &#x3c; qlen; r++) {
+  var ret = _rhandle.call(this, srvName, workerIds);
+  if (!ret) {
+    break;
+  }
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
